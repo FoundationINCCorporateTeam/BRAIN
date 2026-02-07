@@ -1,0 +1,285 @@
+# LEXICON DATA FILE
+# Format:
+# WORD|id|text|concept_ids|pos
+# PHRASE|id|text|concept_ids|pos
+# SYNONYM|synonym|canonical
+# STOP|word
+
+# === STOPWORDS ===
+STOP|the
+STOP|a
+STOP|an
+STOP|is
+STOP|are
+STOP|was
+STOP|were
+STOP|be
+STOP|been
+STOP|being
+STOP|it
+STOP|its
+STOP|of
+STOP|in
+STOP|to
+STOP|for
+STOP|and
+STOP|or
+STOP|but
+STOP|on
+STOP|at
+STOP|by
+STOP|with
+STOP|from
+STOP|as
+STOP|do
+STOP|does
+STOP|did
+STOP|has
+STOP|have
+STOP|had
+STOP|that
+STOP|this
+STOP|these
+STOP|those
+STOP|i
+STOP|me
+STOP|my
+STOP|we
+STOP|our
+STOP|you
+STOP|your
+STOP|can
+STOP|will
+STOP|would
+STOP|should
+STOP|could
+STOP|just
+STOP|so
+STOP|very
+STOP|too
+STOP|also
+STOP|there
+STOP|here
+STOP|not
+STOP|no
+STOP|if
+STOP|then
+STOP|than
+STOP|when
+STOP|how
+STOP|all
+STOP|some
+STOP|any
+STOP|each
+STOP|more
+STOP|most
+STOP|other
+
+# === SYNONYMS ===
+SYNONYM|hi|hello
+SYNONYM|hey|hello
+SYNONYM|howdy|hello
+SYNONYM|hiya|hello
+SYNONYM|greetings|hello
+SYNONYM|yo|hello
+SYNONYM|sup|hello
+SYNONYM|bye|goodbye
+SYNONYM|cya|goodbye
+SYNONYM|later|goodbye
+SYNONYM|seeya|goodbye
+SYNONYM|mn|minnesota
+SYNONYM|minn|minnesota
+SYNONYM|mpls|minneapolis
+SYNONYM|stpaul|saint paul
+SYNONYM|stp|saint paul
+SYNONYM|vikes|vikings
+SYNONYM|wolves|timberwolves
+SYNONYM|twolves|timberwolves
+SYNONYM|freezing|cold
+SYNONYM|chilly|cold
+SYNONYM|snowy|snow
+SYNONYM|hottish|hotdish
+SYNONYM|lutefisk|lutefisk
+SYNONYM|lakers|lakes
+SYNONYM|outdoors|nature
+
+# === GREETINGS ===
+WORD|w_hello|hello|c_greeting,c_friendly|interjection
+WORD|w_good|good|c_positive,c_greeting|adj
+WORD|w_morning|morning|c_time,c_greeting|noun
+WORD|w_afternoon|afternoon|c_time,c_greeting|noun
+WORD|w_evening|evening|c_time,c_greeting|noun
+WORD|w_welcome|welcome|c_greeting,c_friendly|interjection
+WORD|w_goodbye|goodbye|c_farewell|interjection
+WORD|w_farewell|farewell|c_farewell|interjection
+
+# === MINNESOTA CORE ===
+WORD|w_minnesota|minnesota|c_minnesota,c_state|noun
+WORD|w_state|state|c_state,c_place|noun
+WORD|w_north|north|c_direction,c_minnesota|adj
+WORD|w_star|star|c_symbol,c_minnesota|noun
+WORD|w_gopher|gopher|c_mascot,c_minnesota|noun
+WORD|w_land|land|c_place,c_nature|noun
+WORD|w_home|home|c_place,c_comfort|noun
+WORD|w_people|people|c_community,c_social|noun
+WORD|w_nice|nice|c_friendly,c_mn_nice|adj
+WORD|w_friendly|friendly|c_friendly,c_mn_nice|adj
+WORD|w_kind|kind|c_friendly,c_mn_nice|adj
+WORD|w_polite|polite|c_friendly,c_mn_nice|adj
+WORD|w_midwestern|midwestern|c_midwest,c_minnesota|adj
+WORD|w_midwest|midwest|c_midwest,c_region|noun
+WORD|w_northern|northern|c_direction,c_minnesota|adj
+
+# === CITIES ===
+WORD|w_minneapolis|minneapolis|c_minneapolis,c_city|noun
+WORD|w_city|city|c_city,c_place|noun
+WORD|w_downtown|downtown|c_city,c_place|noun
+WORD|w_urban|urban|c_city|adj
+WORD|w_duluth|duluth|c_duluth,c_city|noun
+WORD|w_rochester|rochester|c_rochester,c_city|noun
+WORD|w_bloomington|bloomington|c_bloomington,c_city|noun
+WORD|w_mall|mall|c_shopping,c_bloomington|noun
+PHRASE|p_saint_paul|saint paul|c_saintpaul,c_city|noun
+PHRASE|p_twin_cities|twin cities|c_twincities,c_city,c_minnesota|noun
+PHRASE|p_mall_of_america|mall of america|c_mall_america,c_shopping,c_bloomington|noun
+
+# === LAKES ===
+WORD|w_lake|lake|c_lake,c_water,c_nature|noun
+WORD|w_lakes|lakes|c_lake,c_water,c_nature|noun
+WORD|w_water|water|c_water,c_nature|noun
+WORD|w_fishing|fishing|c_fishing,c_recreation|noun
+WORD|w_fish|fish|c_fishing,c_nature|noun
+WORD|w_boat|boat|c_boating,c_recreation|noun
+WORD|w_boating|boating|c_boating,c_recreation|noun
+WORD|w_cabin|cabin|c_cabin,c_recreation|noun
+WORD|w_canoe|canoe|c_boating,c_recreation|noun
+WORD|w_swim|swim|c_swimming,c_recreation|verb
+WORD|w_shore|shore|c_lake,c_nature|noun
+WORD|w_boundary|boundary|c_bwca,c_nature|noun
+WORD|w_superior|superior|c_superior,c_lake|adj
+WORD|w_beautiful|beautiful|c_beauty,c_positive|adj
+PHRASE|p_lake_superior|lake superior|c_superior,c_lake,c_nature|noun
+PHRASE|p_10000_lakes|10000 lakes|c_lake,c_minnesota|noun
+PHRASE|p_land_of_lakes|land of lakes|c_lake,c_minnesota|noun
+PHRASE|p_boundary_waters|boundary waters|c_bwca,c_nature,c_recreation|noun
+
+# === WEATHER ===
+WORD|w_weather|weather|c_weather|noun
+WORD|w_winter|winter|c_winter,c_season,c_cold|noun
+WORD|w_summer|summer|c_summer,c_season,c_warm|noun
+WORD|w_spring|spring|c_spring,c_season|noun
+WORD|w_fall|fall|c_fall,c_season|noun
+WORD|w_autumn|autumn|c_fall,c_season|noun
+WORD|w_snow|snow|c_snow,c_winter,c_cold|noun
+WORD|w_cold|cold|c_cold,c_winter|adj
+WORD|w_warm|warm|c_warm,c_summer|adj
+WORD|w_hot|hot|c_warm,c_summer|adj
+WORD|w_ice|ice|c_ice,c_winter,c_cold|noun
+WORD|w_frost|frost|c_cold,c_winter|noun
+WORD|w_blizzard|blizzard|c_snow,c_winter,c_storm|noun
+WORD|w_storm|storm|c_storm,c_weather|noun
+WORD|w_rain|rain|c_rain,c_weather|noun
+WORD|w_sunny|sunny|c_sunny,c_weather|adj
+WORD|w_degrees|degrees|c_temperature,c_weather|noun
+WORD|w_temperature|temperature|c_temperature,c_weather|noun
+WORD|w_season|season|c_season|noun
+WORD|w_harsh|harsh|c_cold,c_winter|adj
+WORD|w_mild|mild|c_warm,c_weather|adj
+PHRASE|p_below_zero|below zero|c_cold,c_winter,c_temperature|adj
+PHRASE|p_polar_vortex|polar vortex|c_cold,c_winter,c_storm|noun
+
+# === SPORTS ===
+WORD|w_vikings|vikings|c_vikings,c_football,c_sports|noun
+WORD|w_football|football|c_football,c_sports|noun
+WORD|w_twins|twins|c_twins,c_baseball,c_sports|noun
+WORD|w_baseball|baseball|c_baseball,c_sports|noun
+WORD|w_wild|wild|c_wild,c_hockey,c_sports|noun
+WORD|w_hockey|hockey|c_hockey,c_sports|noun
+WORD|w_timberwolves|timberwolves|c_timberwolves,c_basketball,c_sports|noun
+WORD|w_basketball|basketball|c_basketball,c_sports|noun
+WORD|w_lynx|lynx|c_lynx,c_basketball,c_sports|noun
+WORD|w_loons|loons|c_loons,c_soccer,c_sports|noun
+WORD|w_soccer|soccer|c_soccer,c_sports|noun
+WORD|w_team|team|c_team,c_sports|noun
+WORD|w_game|game|c_game,c_sports|noun
+WORD|w_play|play|c_game,c_recreation|verb
+WORD|w_win|win|c_winning,c_sports|verb
+WORD|w_score|score|c_game,c_sports|noun
+WORD|w_fan|fan|c_fandom,c_sports|noun
+WORD|w_fans|fans|c_fandom,c_sports|noun
+WORD|w_stadium|stadium|c_venue,c_sports|noun
+WORD|w_arena|arena|c_venue,c_sports|noun
+WORD|w_season|season|c_season,c_sports|noun
+PHRASE|p_us_bank|us bank stadium|c_venue,c_vikings,c_football|noun
+PHRASE|p_target_field|target field|c_venue,c_twins,c_baseball|noun
+PHRASE|p_target_center|target center|c_venue,c_timberwolves,c_basketball|noun
+PHRASE|p_xcel_energy|xcel energy center|c_venue,c_wild,c_hockey|noun
+
+# === CULTURE ===
+WORD|w_culture|culture|c_culture,c_minnesota|noun
+WORD|w_fair|fair|c_statefair,c_culture|noun
+WORD|w_food|food|c_food,c_culture|noun
+WORD|w_hotdish|hotdish|c_hotdish,c_food,c_culture|noun
+WORD|w_lutefisk|lutefisk|c_lutefisk,c_food,c_culture|noun
+WORD|w_walleye|walleye|c_walleye,c_food,c_fishing|noun
+WORD|w_lefse|lefse|c_lefse,c_food,c_culture|noun
+WORD|w_music|music|c_music,c_culture|noun
+WORD|w_theater|theater|c_theater,c_culture|noun
+WORD|w_art|art|c_art,c_culture|noun
+WORD|w_prince|prince|c_prince,c_music,c_minnesota|noun
+WORD|w_dylan|dylan|c_dylan,c_music,c_minnesota|noun
+WORD|w_tradition|tradition|c_tradition,c_culture|noun
+WORD|w_heritage|heritage|c_tradition,c_culture|noun
+WORD|w_scandinavian|scandinavian|c_scandinavian,c_culture|adj
+WORD|w_festival|festival|c_festival,c_culture|noun
+PHRASE|p_minnesota_nice|minnesota nice|c_mn_nice,c_friendly,c_culture|noun
+PHRASE|p_state_fair|state fair|c_statefair,c_culture,c_minnesota|noun
+PHRASE|p_on_a_stick|on a stick|c_statefair,c_food|noun
+PHRASE|p_bob_dylan|bob dylan|c_dylan,c_music,c_minnesota|noun
+PHRASE|p_uff_da|uff da|c_scandinavian,c_culture,c_mn_nice|interjection
+
+# === NATURE / OUTDOORS ===
+WORD|w_nature|nature|c_nature,c_outdoors|noun
+WORD|w_forest|forest|c_forest,c_nature|noun
+WORD|w_trees|trees|c_forest,c_nature|noun
+WORD|w_wildlife|wildlife|c_wildlife,c_nature|noun
+WORD|w_deer|deer|c_wildlife,c_nature|noun
+WORD|w_loon|loon|c_loon,c_wildlife,c_minnesota|noun
+WORD|w_moose|moose|c_wildlife,c_nature|noun
+WORD|w_park|park|c_park,c_recreation|noun
+WORD|w_trail|trail|c_hiking,c_recreation|noun
+WORD|w_hiking|hiking|c_hiking,c_recreation|noun
+WORD|w_camping|camping|c_camping,c_recreation|noun
+WORD|w_river|river|c_river,c_water,c_nature|noun
+WORD|w_mississippi|mississippi|c_mississippi,c_river|noun
+PHRASE|p_north_shore|north shore|c_northshore,c_nature,c_superior|noun
+PHRASE|p_mississippi_river|mississippi river|c_mississippi,c_river,c_nature|noun
+PHRASE|p_voyageurs_park|voyageurs national park|c_park,c_nature,c_recreation|noun
+PHRASE|p_itasca|itasca state park|c_park,c_mississippi,c_nature|noun
+
+# === CONVERSATION WORDS ===
+WORD|w_tell|tell|c_inform,c_speak|verb
+WORD|w_know|know|c_knowledge|verb
+WORD|w_about|about|c_topic_marker|prep
+WORD|w_what|what|c_question|pronoun
+WORD|w_where|where|c_question,c_place|adverb
+WORD|w_why|why|c_question,c_reason|adverb
+WORD|w_who|who|c_question,c_person|pronoun
+WORD|w_like|like|c_positive,c_preference|verb
+WORD|w_love|love|c_positive,c_emotion_love|verb
+WORD|w_think|think|c_thought|verb
+WORD|w_great|great|c_positive|adj
+WORD|w_amazing|amazing|c_positive,c_enthusiasm|adj
+WORD|w_interesting|interesting|c_curious,c_positive|adj
+WORD|w_really|really|c_emphasis|adverb
+WORD|w_many|many|c_quantity|adj
+WORD|w_famous|famous|c_fame,c_notable|adj
+WORD|w_known|known|c_fame,c_knowledge|adj
+WORD|w_popular|popular|c_fame,c_positive|adj
+WORD|w_favorite|favorite|c_preference,c_positive|adj
+WORD|w_best|best|c_positive,c_preference|adj
+WORD|w_enjoy|enjoy|c_positive,c_preference|verb
+WORD|w_experience|experience|c_experience|noun
+WORD|w_visit|visit|c_travel,c_tourism|verb
+WORD|w_explore|explore|c_curious,c_travel|verb
+WORD|w_discover|discover|c_curious,c_knowledge|verb
