@@ -1,0 +1,685 @@
+# BRAIN GRAPH DATA FILE
+# Format:
+# N|id|type|label|baseline|decay|threshold
+# E|source|target|type|weight
+
+# ===========================
+# TOPIC NODES
+# ===========================
+N|t_minnesota|topic|Minnesota|0.1|0.03|0.2
+N|t_sports|topic|Sports|0.05|0.04|0.2
+N|t_weather|topic|Weather|0.05|0.04|0.2
+N|t_lakes|topic|Lakes|0.05|0.04|0.2
+N|t_culture|topic|Culture|0.05|0.04|0.2
+N|t_cities|topic|Cities|0.05|0.04|0.2
+N|t_nature|topic|Nature|0.05|0.04|0.2
+N|t_food|topic|Food|0.05|0.04|0.2
+
+# ===========================
+# EMOTION NODES
+# ===========================
+N|e_friendly|emotion|Friendly|0.15|0.03|0.2
+N|e_curious|emotion|Curious|0.1|0.04|0.2
+N|e_neutral|emotion|Neutral|0.2|0.03|0.15
+N|e_enthusiastic|emotion|Enthusiastic|0.05|0.05|0.25
+N|e_warm|emotion|Warm|0.1|0.04|0.2
+N|e_nostalgic|emotion|Nostalgic|0.03|0.05|0.25
+
+# ===========================
+# GOAL NODES
+# ===========================
+N|goal_greet|goal|Greet User|0.1|0.06|0.2
+N|goal_inform|goal|Inform User|0.15|0.04|0.2
+N|goal_describe|goal|Describe Topic|0.1|0.04|0.2
+N|goal_farewell|goal|Say Goodbye|0.02|0.06|0.2
+N|goal_clarify|goal|Clarify/Ask|0.08|0.05|0.2
+
+# ===========================
+# CONCEPT NODES - GREETINGS
+# ===========================
+N|c_greeting|concept|Greeting|0.0|0.06|0.3
+N|c_farewell|concept|Farewell|0.0|0.06|0.3
+N|c_friendly|concept|Friendly|0.05|0.04|0.25
+N|c_positive|concept|Positive|0.05|0.03|0.25
+N|c_mn_nice|concept|Minnesota Nice|0.03|0.04|0.3
+
+# ===========================
+# CONCEPT NODES - MINNESOTA
+# ===========================
+N|c_minnesota|concept|Minnesota|0.08|0.03|0.25
+N|c_state|concept|State|0.02|0.04|0.3
+N|c_place|concept|Place|0.02|0.04|0.3
+N|c_direction|concept|Direction|0.0|0.05|0.3
+N|c_symbol|concept|Symbol|0.0|0.05|0.3
+N|c_mascot|concept|Mascot|0.0|0.05|0.3
+N|c_community|concept|Community|0.02|0.04|0.3
+N|c_social|concept|Social|0.02|0.04|0.3
+N|c_midwest|concept|Midwest|0.02|0.04|0.3
+N|c_region|concept|Region|0.01|0.05|0.3
+N|c_comfort|concept|Comfort|0.02|0.04|0.3
+
+# ===========================
+# CONCEPT NODES - CITIES
+# ===========================
+N|c_city|concept|City|0.02|0.04|0.3
+N|c_minneapolis|concept|Minneapolis|0.03|0.04|0.3
+N|c_saintpaul|concept|Saint Paul|0.03|0.04|0.3
+N|c_twincities|concept|Twin Cities|0.03|0.04|0.3
+N|c_duluth|concept|Duluth|0.02|0.05|0.3
+N|c_rochester|concept|Rochester|0.02|0.05|0.3
+N|c_bloomington|concept|Bloomington|0.02|0.05|0.3
+N|c_shopping|concept|Shopping|0.01|0.05|0.3
+N|c_mall_america|concept|Mall of America|0.01|0.05|0.3
+
+# ===========================
+# CONCEPT NODES - LAKES & WATER
+# ===========================
+N|c_lake|concept|Lake|0.03|0.04|0.3
+N|c_water|concept|Water|0.02|0.04|0.3
+N|c_nature|concept|Nature|0.03|0.04|0.25
+N|c_fishing|concept|Fishing|0.02|0.05|0.3
+N|c_boating|concept|Boating|0.01|0.05|0.3
+N|c_cabin|concept|Cabin|0.02|0.05|0.3
+N|c_swimming|concept|Swimming|0.01|0.05|0.3
+N|c_superior|concept|Lake Superior|0.03|0.04|0.3
+N|c_bwca|concept|Boundary Waters|0.02|0.05|0.3
+N|c_beauty|concept|Beauty|0.02|0.04|0.3
+
+# ===========================
+# CONCEPT NODES - WEATHER
+# ===========================
+N|c_weather|concept|Weather|0.03|0.04|0.3
+N|c_winter|concept|Winter|0.03|0.04|0.3
+N|c_summer|concept|Summer|0.02|0.04|0.3
+N|c_spring|concept|Spring|0.01|0.05|0.3
+N|c_fall|concept|Fall|0.01|0.05|0.3
+N|c_season|concept|Season|0.02|0.04|0.3
+N|c_snow|concept|Snow|0.02|0.05|0.3
+N|c_cold|concept|Cold|0.02|0.04|0.3
+N|c_warm|concept|Warm|0.02|0.04|0.3
+N|c_ice|concept|Ice|0.01|0.05|0.3
+N|c_storm|concept|Storm|0.01|0.05|0.3
+N|c_rain|concept|Rain|0.01|0.05|0.3
+N|c_sunny|concept|Sunny|0.01|0.05|0.3
+N|c_temperature|concept|Temperature|0.01|0.05|0.3
+
+# ===========================
+# CONCEPT NODES - SPORTS
+# ===========================
+N|c_sports|concept|Sports|0.03|0.04|0.3
+N|c_vikings|concept|Vikings|0.03|0.04|0.3
+N|c_football|concept|Football|0.02|0.04|0.3
+N|c_twins|concept|Twins|0.02|0.05|0.3
+N|c_baseball|concept|Baseball|0.02|0.05|0.3
+N|c_wild|concept|Wild|0.02|0.05|0.3
+N|c_hockey|concept|Hockey|0.02|0.05|0.3
+N|c_timberwolves|concept|Timberwolves|0.02|0.05|0.3
+N|c_basketball|concept|Basketball|0.02|0.05|0.3
+N|c_lynx|concept|Lynx|0.01|0.05|0.3
+N|c_loons|concept|Loons|0.01|0.05|0.3
+N|c_soccer|concept|Soccer|0.01|0.05|0.3
+N|c_team|concept|Team|0.02|0.04|0.3
+N|c_game|concept|Game|0.02|0.04|0.3
+N|c_winning|concept|Winning|0.01|0.05|0.3
+N|c_fandom|concept|Fandom|0.02|0.04|0.3
+N|c_venue|concept|Venue|0.01|0.05|0.3
+
+# ===========================
+# CONCEPT NODES - CULTURE
+# ===========================
+N|c_culture|concept|Culture|0.03|0.04|0.3
+N|c_statefair|concept|State Fair|0.02|0.05|0.3
+N|c_food|concept|Food|0.02|0.04|0.3
+N|c_hotdish|concept|Hotdish|0.01|0.05|0.3
+N|c_lutefisk|concept|Lutefisk|0.01|0.06|0.3
+N|c_walleye|concept|Walleye|0.01|0.05|0.3
+N|c_lefse|concept|Lefse|0.01|0.06|0.3
+N|c_music|concept|Music|0.02|0.05|0.3
+N|c_theater|concept|Theater|0.01|0.05|0.3
+N|c_art|concept|Art|0.01|0.05|0.3
+N|c_prince|concept|Prince|0.02|0.05|0.3
+N|c_dylan|concept|Bob Dylan|0.02|0.05|0.3
+N|c_tradition|concept|Tradition|0.02|0.05|0.3
+N|c_scandinavian|concept|Scandinavian|0.02|0.05|0.3
+N|c_festival|concept|Festival|0.01|0.05|0.3
+
+# ===========================
+# CONCEPT NODES - NATURE/OUTDOORS
+# ===========================
+N|c_outdoors|concept|Outdoors|0.02|0.04|0.3
+N|c_forest|concept|Forest|0.02|0.05|0.3
+N|c_wildlife|concept|Wildlife|0.02|0.05|0.3
+N|c_loon|concept|Loon|0.02|0.05|0.3
+N|c_park|concept|Park|0.02|0.05|0.3
+N|c_hiking|concept|Hiking|0.01|0.05|0.3
+N|c_camping|concept|Camping|0.01|0.05|0.3
+N|c_recreation|concept|Recreation|0.02|0.04|0.3
+N|c_river|concept|River|0.02|0.05|0.3
+N|c_mississippi|concept|Mississippi|0.02|0.05|0.3
+N|c_northshore|concept|North Shore|0.02|0.05|0.3
+
+# ===========================
+# CONCEPT NODES - CONVERSATION
+# ===========================
+N|c_inform|concept|Inform|0.02|0.04|0.3
+N|c_speak|concept|Speak|0.01|0.05|0.3
+N|c_knowledge|concept|Knowledge|0.02|0.04|0.3
+N|c_topic_marker|concept|Topic Marker|0.0|0.06|0.3
+N|c_question|concept|Question|0.02|0.04|0.3
+N|c_reason|concept|Reason|0.01|0.05|0.3
+N|c_person|concept|Person|0.01|0.05|0.3
+N|c_preference|concept|Preference|0.02|0.04|0.3
+N|c_emotion_love|concept|Love|0.02|0.05|0.3
+N|c_thought|concept|Thought|0.02|0.05|0.3
+N|c_enthusiasm|concept|Enthusiasm|0.02|0.05|0.3
+N|c_curious|concept|Curious|0.02|0.04|0.3
+N|c_emphasis|concept|Emphasis|0.01|0.05|0.3
+N|c_quantity|concept|Quantity|0.01|0.05|0.3
+N|c_fame|concept|Fame|0.01|0.05|0.3
+N|c_notable|concept|Notable|0.01|0.05|0.3
+N|c_experience|concept|Experience|0.02|0.04|0.3
+N|c_travel|concept|Travel|0.02|0.05|0.3
+N|c_tourism|concept|Tourism|0.01|0.05|0.3
+N|c_time|concept|Time|0.01|0.05|0.3
+
+# ===========================
+# MOTOR/LEXEME NODES
+# ===========================
+N|m_greet_out|motor|Greeting Output|0.0|0.06|0.3
+N|m_farewell_out|motor|Farewell Output|0.0|0.06|0.3
+N|m_inform_out|motor|Inform Output|0.0|0.05|0.3
+N|m_describe_out|motor|Describe Output|0.0|0.05|0.3
+N|m_positive_out|motor|Positive Output|0.0|0.05|0.3
+N|l_minnesota|lexeme|Minnesota Lexeme|0.0|0.05|0.3
+N|l_lake|lexeme|Lake Lexeme|0.0|0.05|0.3
+N|l_winter|lexeme|Winter Lexeme|0.0|0.05|0.3
+N|l_sports|lexeme|Sports Lexeme|0.0|0.05|0.3
+N|l_culture|lexeme|Culture Lexeme|0.0|0.05|0.3
+N|l_nature|lexeme|Nature Lexeme|0.0|0.05|0.3
+N|l_city|lexeme|City Lexeme|0.0|0.05|0.3
+
+# ===========================
+# EDGES - TOPIC <-> CONCEPT (excitatory)
+# ===========================
+# Minnesota topic connections
+E|t_minnesota|c_minnesota|excitatory|0.9
+E|c_minnesota|t_minnesota|excitatory|0.8
+E|t_minnesota|c_state|excitatory|0.6
+E|t_minnesota|c_mn_nice|excitatory|0.7
+E|t_minnesota|c_midwest|excitatory|0.5
+E|t_minnesota|c_community|excitatory|0.4
+E|t_minnesota|c_friendly|excitatory|0.5
+E|t_minnesota|c_mascot|excitatory|0.3
+E|t_minnesota|c_symbol|excitatory|0.3
+E|c_state|t_minnesota|excitatory|0.5
+
+# Sports topic connections
+E|t_sports|c_sports|excitatory|0.9
+E|c_sports|t_sports|excitatory|0.8
+E|t_sports|c_vikings|excitatory|0.7
+E|t_sports|c_twins|excitatory|0.6
+E|t_sports|c_wild|excitatory|0.6
+E|t_sports|c_timberwolves|excitatory|0.6
+E|t_sports|c_lynx|excitatory|0.5
+E|t_sports|c_loons|excitatory|0.5
+E|t_sports|c_football|excitatory|0.6
+E|t_sports|c_baseball|excitatory|0.5
+E|t_sports|c_hockey|excitatory|0.6
+E|t_sports|c_basketball|excitatory|0.5
+E|t_sports|c_soccer|excitatory|0.4
+E|t_sports|c_team|excitatory|0.5
+E|t_sports|c_game|excitatory|0.5
+E|t_sports|c_fandom|excitatory|0.4
+E|t_sports|c_venue|excitatory|0.3
+
+# Weather topic connections
+E|t_weather|c_weather|excitatory|0.9
+E|c_weather|t_weather|excitatory|0.8
+E|t_weather|c_winter|excitatory|0.7
+E|t_weather|c_summer|excitatory|0.6
+E|t_weather|c_spring|excitatory|0.5
+E|t_weather|c_fall|excitatory|0.5
+E|t_weather|c_snow|excitatory|0.6
+E|t_weather|c_cold|excitatory|0.7
+E|t_weather|c_warm|excitatory|0.5
+E|t_weather|c_ice|excitatory|0.5
+E|t_weather|c_storm|excitatory|0.5
+E|t_weather|c_rain|excitatory|0.4
+E|t_weather|c_sunny|excitatory|0.4
+E|t_weather|c_temperature|excitatory|0.5
+E|t_weather|c_season|excitatory|0.5
+
+# Lakes topic connections
+E|t_lakes|c_lake|excitatory|0.9
+E|c_lake|t_lakes|excitatory|0.8
+E|t_lakes|c_water|excitatory|0.7
+E|t_lakes|c_fishing|excitatory|0.6
+E|t_lakes|c_boating|excitatory|0.5
+E|t_lakes|c_cabin|excitatory|0.5
+E|t_lakes|c_swimming|excitatory|0.4
+E|t_lakes|c_superior|excitatory|0.7
+E|t_lakes|c_bwca|excitatory|0.6
+E|t_lakes|c_nature|excitatory|0.5
+E|t_lakes|c_beauty|excitatory|0.4
+E|t_lakes|c_recreation|excitatory|0.5
+
+# Culture topic connections
+E|t_culture|c_culture|excitatory|0.9
+E|c_culture|t_culture|excitatory|0.8
+E|t_culture|c_statefair|excitatory|0.7
+E|t_culture|c_food|excitatory|0.6
+E|t_culture|c_hotdish|excitatory|0.5
+E|t_culture|c_lutefisk|excitatory|0.4
+E|t_culture|c_walleye|excitatory|0.4
+E|t_culture|c_lefse|excitatory|0.4
+E|t_culture|c_music|excitatory|0.6
+E|t_culture|c_theater|excitatory|0.4
+E|t_culture|c_art|excitatory|0.4
+E|t_culture|c_prince|excitatory|0.5
+E|t_culture|c_dylan|excitatory|0.5
+E|t_culture|c_tradition|excitatory|0.5
+E|t_culture|c_scandinavian|excitatory|0.5
+E|t_culture|c_festival|excitatory|0.4
+E|t_culture|c_mn_nice|excitatory|0.6
+
+# Cities topic connections
+E|t_cities|c_city|excitatory|0.8
+E|c_city|t_cities|excitatory|0.7
+E|t_cities|c_minneapolis|excitatory|0.8
+E|t_cities|c_saintpaul|excitatory|0.7
+E|t_cities|c_twincities|excitatory|0.8
+E|t_cities|c_duluth|excitatory|0.5
+E|t_cities|c_rochester|excitatory|0.5
+E|t_cities|c_bloomington|excitatory|0.4
+E|t_cities|c_mall_america|excitatory|0.4
+E|t_cities|c_shopping|excitatory|0.3
+
+# Nature topic connections
+E|t_nature|c_nature|excitatory|0.9
+E|c_nature|t_nature|excitatory|0.8
+E|t_nature|c_outdoors|excitatory|0.7
+E|t_nature|c_forest|excitatory|0.6
+E|t_nature|c_wildlife|excitatory|0.6
+E|t_nature|c_loon|excitatory|0.5
+E|t_nature|c_park|excitatory|0.5
+E|t_nature|c_hiking|excitatory|0.4
+E|t_nature|c_camping|excitatory|0.4
+E|t_nature|c_recreation|excitatory|0.5
+E|t_nature|c_river|excitatory|0.5
+E|t_nature|c_mississippi|excitatory|0.5
+E|t_nature|c_northshore|excitatory|0.5
+E|t_nature|c_beauty|excitatory|0.4
+
+# Food topic connections
+E|t_food|c_food|excitatory|0.9
+E|c_food|t_food|excitatory|0.8
+E|t_food|c_hotdish|excitatory|0.7
+E|t_food|c_lutefisk|excitatory|0.5
+E|t_food|c_walleye|excitatory|0.6
+E|t_food|c_lefse|excitatory|0.5
+E|t_food|c_statefair|excitatory|0.5
+E|t_food|c_culture|excitatory|0.4
+E|t_food|c_scandinavian|excitatory|0.3
+E|t_food|c_tradition|excitatory|0.3
+
+# ===========================
+# EDGES - CONCEPT <-> CONCEPT (associative)
+# ===========================
+# Minnesota associations
+E|c_minnesota|c_lake|associative|0.7
+E|c_minnesota|c_cold|associative|0.6
+E|c_minnesota|c_friendly|associative|0.6
+E|c_minnesota|c_sports|associative|0.5
+E|c_minnesota|c_culture|associative|0.5
+E|c_minnesota|c_nature|associative|0.6
+E|c_minnesota|c_loon|associative|0.5
+E|c_minnesota|c_city|associative|0.4
+E|c_minnesota|c_twincities|associative|0.6
+E|c_minnesota|c_scandinavian|associative|0.4
+
+# Weather-season associations
+E|c_winter|c_cold|associative|0.8
+E|c_winter|c_snow|associative|0.8
+E|c_winter|c_ice|associative|0.7
+E|c_cold|c_snow|associative|0.7
+E|c_cold|c_ice|associative|0.6
+E|c_summer|c_warm|associative|0.7
+E|c_summer|c_lake|associative|0.6
+E|c_summer|c_swimming|associative|0.5
+E|c_summer|c_fishing|associative|0.5
+E|c_summer|c_cabin|associative|0.5
+E|c_snow|c_storm|associative|0.5
+E|c_warm|c_sunny|associative|0.5
+E|c_season|c_winter|associative|0.5
+E|c_season|c_summer|associative|0.5
+E|c_season|c_spring|associative|0.4
+E|c_season|c_fall|associative|0.4
+
+# Sports associations
+E|c_vikings|c_football|associative|0.9
+E|c_football|c_vikings|associative|0.8
+E|c_twins|c_baseball|associative|0.9
+E|c_baseball|c_twins|associative|0.8
+E|c_wild|c_hockey|associative|0.9
+E|c_hockey|c_wild|associative|0.8
+E|c_timberwolves|c_basketball|associative|0.9
+E|c_basketball|c_timberwolves|associative|0.7
+E|c_lynx|c_basketball|associative|0.8
+E|c_loons|c_soccer|associative|0.8
+E|c_sports|c_team|associative|0.6
+E|c_sports|c_game|associative|0.6
+E|c_sports|c_fandom|associative|0.5
+E|c_sports|c_venue|associative|0.4
+E|c_game|c_winning|associative|0.5
+E|c_fandom|c_team|associative|0.5
+E|c_venue|c_game|associative|0.4
+E|c_hockey|c_ice|associative|0.5
+E|c_vikings|c_venue|associative|0.4
+E|c_twins|c_venue|associative|0.4
+
+# Lake associations
+E|c_lake|c_water|associative|0.8
+E|c_lake|c_fishing|associative|0.7
+E|c_lake|c_boating|associative|0.6
+E|c_lake|c_cabin|associative|0.6
+E|c_lake|c_nature|associative|0.6
+E|c_lake|c_beauty|associative|0.5
+E|c_superior|c_lake|associative|0.8
+E|c_superior|c_northshore|associative|0.7
+E|c_superior|c_duluth|associative|0.6
+E|c_bwca|c_nature|associative|0.7
+E|c_bwca|c_camping|associative|0.6
+E|c_bwca|c_boating|associative|0.5
+E|c_fishing|c_walleye|associative|0.6
+E|c_water|c_river|associative|0.5
+E|c_river|c_mississippi|associative|0.7
+
+# City associations
+E|c_minneapolis|c_twincities|associative|0.8
+E|c_saintpaul|c_twincities|associative|0.8
+E|c_minneapolis|c_saintpaul|associative|0.6
+E|c_twincities|c_city|associative|0.7
+E|c_duluth|c_superior|associative|0.7
+E|c_duluth|c_northshore|associative|0.6
+E|c_bloomington|c_mall_america|associative|0.7
+E|c_mall_america|c_shopping|associative|0.7
+E|c_rochester|c_city|associative|0.4
+E|c_minneapolis|c_prince|associative|0.5
+E|c_minneapolis|c_music|associative|0.4
+
+# Culture associations
+E|c_culture|c_tradition|associative|0.6
+E|c_culture|c_scandinavian|associative|0.5
+E|c_culture|c_food|associative|0.5
+E|c_statefair|c_food|associative|0.7
+E|c_statefair|c_festival|associative|0.6
+E|c_hotdish|c_food|associative|0.7
+E|c_lutefisk|c_scandinavian|associative|0.6
+E|c_lefse|c_scandinavian|associative|0.6
+E|c_prince|c_music|associative|0.8
+E|c_dylan|c_music|associative|0.8
+E|c_music|c_culture|associative|0.5
+E|c_mn_nice|c_friendly|associative|0.8
+E|c_mn_nice|c_community|associative|0.5
+E|c_tradition|c_scandinavian|associative|0.6
+E|c_art|c_culture|associative|0.5
+E|c_theater|c_culture|associative|0.5
+E|c_festival|c_culture|associative|0.5
+
+# Nature associations
+E|c_nature|c_outdoors|associative|0.7
+E|c_nature|c_wildlife|associative|0.6
+E|c_nature|c_forest|associative|0.6
+E|c_nature|c_lake|associative|0.5
+E|c_nature|c_river|associative|0.5
+E|c_wildlife|c_loon|associative|0.6
+E|c_outdoors|c_hiking|associative|0.6
+E|c_outdoors|c_camping|associative|0.6
+E|c_outdoors|c_recreation|associative|0.5
+E|c_park|c_nature|associative|0.6
+E|c_park|c_recreation|associative|0.5
+E|c_northshore|c_nature|associative|0.6
+E|c_northshore|c_beauty|associative|0.5
+E|c_mississippi|c_river|associative|0.8
+E|c_mississippi|c_nature|associative|0.4
+E|c_loon|c_minnesota|associative|0.6
+
+# Conversation concept associations
+E|c_question|c_curious|associative|0.6
+E|c_question|c_knowledge|associative|0.5
+E|c_inform|c_knowledge|associative|0.6
+E|c_curious|c_knowledge|associative|0.5
+E|c_positive|c_friendly|associative|0.5
+E|c_positive|c_enthusiasm|associative|0.5
+E|c_preference|c_positive|associative|0.4
+E|c_emotion_love|c_positive|associative|0.6
+E|c_travel|c_tourism|associative|0.7
+E|c_travel|c_experience|associative|0.5
+E|c_fame|c_notable|associative|0.7
+E|c_experience|c_recreation|associative|0.4
+
+# Cross-topic associations
+E|c_minnesota|c_vikings|associative|0.6
+E|c_minnesota|c_twins|associative|0.5
+E|c_minnesota|c_wild|associative|0.5
+E|c_minnesota|c_statefair|associative|0.6
+E|c_minnesota|c_hotdish|associative|0.4
+E|c_minnesota|c_mississippi|associative|0.5
+E|c_winter|c_hockey|associative|0.5
+E|c_winter|c_minnesota|associative|0.6
+E|c_lake|c_minnesota|associative|0.7
+E|c_cabin|c_minnesota|associative|0.4
+E|c_scandinavian|c_minnesota|associative|0.5
+E|c_loon|c_lake|associative|0.5
+
+# ===========================
+# EDGES - CAUSAL (concept -> goal)
+# ===========================
+E|c_greeting|goal_greet|causal|0.9
+E|c_farewell|goal_farewell|causal|0.9
+E|c_question|goal_clarify|causal|0.7
+E|c_question|goal_inform|causal|0.5
+E|c_inform|goal_inform|causal|0.7
+E|c_topic_marker|goal_inform|causal|0.5
+E|c_topic_marker|goal_describe|causal|0.6
+E|c_curious|goal_inform|causal|0.5
+E|c_curious|goal_describe|causal|0.4
+E|c_knowledge|goal_inform|causal|0.5
+E|c_preference|goal_describe|causal|0.4
+E|c_travel|goal_describe|causal|0.4
+E|c_experience|goal_describe|causal|0.4
+
+# ===========================
+# EDGES - GOAL -> CONCEPT/TOPIC (excitatory, what the goal activates)
+# ===========================
+E|goal_greet|c_greeting|excitatory|0.8
+E|goal_greet|c_friendly|excitatory|0.7
+E|goal_greet|c_positive|excitatory|0.5
+E|goal_greet|e_friendly|excitatory|0.6
+E|goal_greet|e_warm|excitatory|0.4
+
+E|goal_inform|c_inform|excitatory|0.6
+E|goal_inform|c_knowledge|excitatory|0.5
+E|goal_inform|t_minnesota|excitatory|0.3
+E|goal_inform|e_neutral|excitatory|0.3
+E|goal_inform|c_minnesota|excitatory|0.3
+
+E|goal_describe|c_minnesota|excitatory|0.4
+E|goal_describe|c_nature|excitatory|0.3
+E|goal_describe|c_beauty|excitatory|0.3
+E|goal_describe|e_enthusiastic|excitatory|0.4
+E|goal_describe|c_positive|excitatory|0.3
+
+E|goal_farewell|c_farewell|excitatory|0.8
+E|goal_farewell|c_friendly|excitatory|0.5
+E|goal_farewell|e_warm|excitatory|0.4
+
+E|goal_clarify|c_question|excitatory|0.6
+E|goal_clarify|c_curious|excitatory|0.5
+E|goal_clarify|e_curious|excitatory|0.5
+
+# ===========================
+# EDGES - EMOTION <-> CONCEPT (excitatory/inhibitory)
+# ===========================
+E|e_friendly|c_friendly|excitatory|0.7
+E|c_friendly|e_friendly|excitatory|0.6
+E|e_friendly|c_mn_nice|excitatory|0.5
+E|e_friendly|c_positive|excitatory|0.4
+E|e_curious|c_curious|excitatory|0.7
+E|c_curious|e_curious|excitatory|0.6
+E|e_curious|c_question|excitatory|0.5
+E|e_enthusiastic|c_enthusiasm|excitatory|0.7
+E|c_enthusiasm|e_enthusiastic|excitatory|0.5
+E|e_enthusiastic|c_positive|excitatory|0.5
+E|e_warm|c_friendly|excitatory|0.5
+E|e_warm|c_comfort|excitatory|0.4
+E|e_nostalgic|c_tradition|excitatory|0.5
+E|e_nostalgic|c_cabin|excitatory|0.4
+E|e_neutral|c_inform|excitatory|0.3
+
+# Emotion competition (inhibitory)
+E|e_enthusiastic|e_neutral|inhibitory|0.3
+E|e_neutral|e_enthusiastic|inhibitory|0.2
+E|e_friendly|e_neutral|inhibitory|0.2
+
+# ===========================
+# EDGES - CONCEPT -> MOTOR/LEXEME (excitatory)
+# ===========================
+E|c_greeting|m_greet_out|excitatory|0.8
+E|c_farewell|m_farewell_out|excitatory|0.8
+E|c_inform|m_inform_out|excitatory|0.6
+E|c_positive|m_positive_out|excitatory|0.5
+E|c_minnesota|l_minnesota|excitatory|0.7
+E|c_lake|l_lake|excitatory|0.7
+E|c_winter|l_winter|excitatory|0.6
+E|c_cold|l_winter|excitatory|0.5
+E|c_sports|l_sports|excitatory|0.6
+E|c_culture|l_culture|excitatory|0.6
+E|c_nature|l_nature|excitatory|0.6
+E|c_city|l_city|excitatory|0.6
+E|c_beauty|m_describe_out|excitatory|0.4
+E|c_experience|m_describe_out|excitatory|0.4
+
+# Motor -> concept feedback (weak)
+E|m_greet_out|c_friendly|excitatory|0.3
+E|m_inform_out|c_knowledge|excitatory|0.3
+E|m_describe_out|c_positive|excitatory|0.3
+
+# ===========================
+# EDGES - TOPIC <-> TOPIC (associative, weaker cross-topic links)
+# ===========================
+E|t_minnesota|t_sports|associative|0.4
+E|t_minnesota|t_weather|associative|0.4
+E|t_minnesota|t_lakes|associative|0.5
+E|t_minnesota|t_culture|associative|0.4
+E|t_minnesota|t_cities|associative|0.4
+E|t_minnesota|t_nature|associative|0.4
+E|t_minnesota|t_food|associative|0.3
+E|t_sports|t_cities|associative|0.3
+E|t_weather|t_nature|associative|0.3
+E|t_weather|t_lakes|associative|0.3
+E|t_lakes|t_nature|associative|0.5
+E|t_culture|t_food|associative|0.5
+E|t_culture|t_cities|associative|0.3
+E|t_nature|t_lakes|associative|0.5
+
+# ===========================
+# EDGES - INHIBITORY (competition between sports teams etc.)
+# ===========================
+E|c_vikings|c_twins|inhibitory|0.15
+E|c_twins|c_vikings|inhibitory|0.15
+E|c_wild|c_timberwolves|inhibitory|0.15
+E|c_timberwolves|c_wild|inhibitory|0.15
+E|c_football|c_baseball|inhibitory|0.1
+E|c_baseball|c_football|inhibitory|0.1
+E|c_hockey|c_basketball|inhibitory|0.1
+E|c_basketball|c_hockey|inhibitory|0.1
+E|c_winter|c_summer|inhibitory|0.2
+E|c_summer|c_winter|inhibitory|0.2
+E|c_cold|c_warm|inhibitory|0.25
+E|c_warm|c_cold|inhibitory|0.25
+E|c_greeting|c_farewell|inhibitory|0.3
+E|c_farewell|c_greeting|inhibitory|0.3
+
+# ===========================
+# ADDITIONAL ASSOCIATIVE EDGES FOR RICHNESS
+# ===========================
+E|c_walleye|c_lake|associative|0.6
+E|c_walleye|c_fishing|associative|0.7
+E|c_cabin|c_lake|associative|0.6
+E|c_cabin|c_recreation|associative|0.4
+E|c_camping|c_nature|associative|0.6
+E|c_hiking|c_nature|associative|0.6
+E|c_hiking|c_park|associative|0.5
+E|c_swimming|c_lake|associative|0.6
+E|c_swimming|c_summer|associative|0.5
+E|c_boating|c_lake|associative|0.7
+E|c_boating|c_water|associative|0.5
+E|c_storm|c_weather|associative|0.6
+E|c_rain|c_weather|associative|0.5
+E|c_sunny|c_summer|associative|0.4
+E|c_ice|c_hockey|associative|0.4
+E|c_snow|c_minnesota|associative|0.5
+E|c_prince|c_minneapolis|associative|0.6
+E|c_dylan|c_minnesota|associative|0.5
+E|c_statefair|c_minnesota|associative|0.6
+E|c_hotdish|c_minnesota|associative|0.5
+E|c_lutefisk|c_scandinavian|associative|0.7
+E|c_lefse|c_scandinavian|associative|0.7
+E|c_festival|c_statefair|associative|0.5
+E|c_mall_america|c_minnesota|associative|0.4
+E|c_tourism|c_minnesota|associative|0.4
+E|c_tourism|c_mall_america|associative|0.4
+E|c_tourism|c_lake|associative|0.3
+E|c_tourism|c_nature|associative|0.3
+E|c_recreation|c_lake|associative|0.4
+E|c_recreation|c_nature|associative|0.4
+E|c_recreation|c_sports|associative|0.3
+E|c_beauty|c_nature|associative|0.6
+E|c_beauty|c_lake|associative|0.5
+E|c_loon|c_wildlife|associative|0.6
+E|c_forest|c_wildlife|associative|0.5
+E|c_community|c_social|associative|0.6
+E|c_social|c_friendly|associative|0.4
+E|c_thought|c_knowledge|associative|0.5
+E|c_speak|c_inform|associative|0.5
+E|c_emphasis|c_positive|associative|0.3
+E|c_quantity|c_lake|associative|0.3
+E|c_notable|c_fame|associative|0.6
+E|c_notable|c_prince|associative|0.4
+E|c_notable|c_dylan|associative|0.4
+E|c_experience|c_travel|associative|0.5
+
+# Additional topic-concept cross-links
+E|c_vikings|t_minnesota|excitatory|0.4
+E|c_twins|t_minnesota|excitatory|0.3
+E|c_wild|t_minnesota|excitatory|0.3
+E|c_timberwolves|t_minnesota|excitatory|0.3
+E|c_winter|t_minnesota|excitatory|0.4
+E|c_lake|t_minnesota|excitatory|0.5
+E|c_mn_nice|t_minnesota|excitatory|0.5
+E|c_culture|t_minnesota|excitatory|0.4
+E|c_statefair|t_minnesota|excitatory|0.4
+E|c_prince|t_minnesota|excitatory|0.3
+E|c_dylan|t_minnesota|excitatory|0.3
+E|c_loon|t_minnesota|excitatory|0.4
+E|c_mississippi|t_minnesota|excitatory|0.3
+E|c_superior|t_minnesota|excitatory|0.4
+E|c_twincities|t_minnesota|excitatory|0.5
+E|c_minneapolis|t_minnesota|excitatory|0.5
+E|c_saintpaul|t_minnesota|excitatory|0.4
+E|c_duluth|t_minnesota|excitatory|0.3
+E|c_food|t_minnesota|excitatory|0.3
+E|c_hotdish|t_minnesota|excitatory|0.3
+E|c_scandinavian|t_minnesota|excitatory|0.3
+
+# Additional edges to reach 400+ count
+E|c_lake|c_beauty|associative|0.5
+E|c_fishing|c_recreation|associative|0.5
+E|c_cabin|c_nature|associative|0.4
+E|c_loon|c_nature|associative|0.5
+E|c_park|c_hiking|associative|0.5
+E|c_camping|c_recreation|associative|0.5
+E|c_river|c_nature|associative|0.5
+E|c_forest|c_park|associative|0.4
+E|c_wildlife|c_nature|associative|0.5
